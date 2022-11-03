@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+
+/*  font-family: 'Alkalami', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+/*  font-family: 'Roboto', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.topbar{
+    background-color: #131515;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar img{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+.topbar p{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#1C1E1F;
+}
+
+.logo img{
+    margin-top: 4px;
+    width: 120px;
+    height: 100px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+.navbar ul li{
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #131515;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-main{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-social ul{
+    padding-top: 10px;
+    padding-left: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.navbar-utils ul{
+    padding-top: 10px;
+    padding-right: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.navbar-social a .twitter {
+    margin-top: 2px;
+    padding-left: 6px;
+}
+
+.hero-animated {
+    background-repeat: no-repeat;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.hero-animated img{
+    width: 100%;
+    height: 750px;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px;
+    width: auto;
+    height: 200px;
+}
+
+.about-us h2{
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.about-us p{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    margin: 0px 100px;
+}
+
+.about-us {
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.footer-content{
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.about-end{
+    background-color: #131515;
+    width: auto;
+    height: 50px;
+}
+
+.footer-content .footer-main{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
+    padding: 45px 0px;
+}
+
+.footer-content .footer-main .box h2{
+    color: #131515;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.footer-content .footer-main .box iframe{
+    width: 600px;
+    height: 450px;
+}
+
+.footer-content .footer-main .box p{
+    color: #131515;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.footer-content .footer-main .box ul li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-content .footer-main .box ul li p{
+    margin-top: 5px;
+}
+
+.payments__img{
+    width: 350px;
+}
+
+.img__socials{
+    height: 25px;
+    width: 25px;
+    margin: 8px;
+}
+
+.footer-content .footer-back{
+    background-color: #131515;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content .footer-back small{
+    font-size: 20px;
+}
+
+@media screen and (max-width:800px){
+    .hero-animated img{
+        width: 100%;
+        height: 500px;
+    }
+    
+    .about-us{
+        height: 450px;
+        display: inline-block;
+    }
+
+    .about-us p{
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        margin: 80px 0px;
+    }
+    .footer-content .footer-main{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        padding: 35px 0px;
+    }
+
+    .footer-content .footer-main .box iframe{
+        width: 300px;
+        height: 200px;
+    }
+}
