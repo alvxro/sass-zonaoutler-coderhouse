@@ -17,19 +17,19 @@
     color: $primary_color;
     margin-bottom: 25px;
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary_font;
     font-weight: bold;
 }
 
 .footer-content .footer-main .box iframe{
-    width: 600px;
-    height: 450px;
+    width: 500px;
+    height: 350px;
 }
 
 .footer-content .footer-main .box p{
     color: $primary_color;
     margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary_font;
     font-size: 20px;
 }
 
@@ -55,13 +55,15 @@
     margin: 8px;
 }
 
-.footer-content .footer-back{
+.footer-content .footer-startend{
     background-color: $primary_color;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
+    font-weight: 500;
+    font-family: $primary_font;
 }
 
-.footer-content .footer-back small{
+.footer-content .footer-startend small{
     font-size: 20px;
 }

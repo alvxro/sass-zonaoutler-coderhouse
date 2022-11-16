@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
-/*  font-family: 'Alkalami', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
-
 .hero-animated {
     background-repeat: no-repeat;
     -webkit-animation-duration: 4s;
@@ -27,7 +23,7 @@
 
 .hero-animated img{
     width: 100%;
-    height: 750px;
+    height: 850px;
 }
 
 .about-us{
@@ -36,23 +32,23 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 100px;
+    margin: 50px 100px;
     width: auto;
     height: 200px;
 }
 
 .about-us h2{
     font-size: 35px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary_font;
     font-weight: bold;
     padding-bottom: 20px;
 }
 
 .about-us p{
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary_font;
     font-weight: lighter;
-    margin: 0px 100px;
+    margin: 0px 200px;
 }
 
 .about-us {
@@ -100,29 +96,26 @@
     }
 }
 
-.about-end{
-    background-color: $primary_color;
-    width: auto;
-    height: 50px;
-}
-
 @media screen and (max-width:800px){
+
     .hero-animated img{
         width: 100%;
-        height: 500px;
+        height: 350px;
     }
     
     .about-us{
-        height: 450px;
+        margin: 5px 60px;
+        height: 350px;
         display: inline-block;
     }
 
     .about-us p{
         font-size: 14px;
-        font-family: 'Roboto', sans-serif;
+        font-family: $primary_font;
         font-weight: lighter;
-        margin: 80px 0px;
+        margin: 20px 20px 5px 5px;
     }
+    
     .footer-content .footer-main{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);

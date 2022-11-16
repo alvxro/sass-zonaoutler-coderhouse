@@ -1,20 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
-
-/*  font-family: 'Alkalami', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
-
-/*  font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,200;1,700&display=swap');
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    outline: none;
 }
 
 .topbar{
-    background-color: #131515;
+    background-color: #171a1a;
     height: 30px;
     display: flex;
     align-items: center;
@@ -31,7 +24,7 @@
     color: white;
     font-size: 14px;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .logo {
@@ -39,7 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#1C1E1F;
+    background-color: #1C1E1F;
 }
 
 .logo img{
@@ -48,59 +41,63 @@
     height: 100px;
 }
 
-.navbar{
+.nav-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    background-color: white;
+    height: 2em;
 }
 
-.navbar ul{
+.nav-main ul{
     list-style: none;
     display: flex;
-    position: relative;
-}
-.navbar ul li{
-    position: relative;
-    overflow: hidden;
 }
 
-.navbar ul li a {
-    display: block;
+.nav-main ul li a {
     text-decoration: none;
-    color: #131515;
+    color: #171a1a;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 22px;
     text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
-.navbar-main{
-    height: 50px;
-    background-color: white;
+.nav-social{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    height: 2em;
 }
 
-.navbar-social ul{
-    padding-top: 10px;
+.navbar-redes ul{    
+    overflow: auto;
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-redes ul li a{
+    padding-left: 25px;
+}
+
+.navbar-redes ul li .twitter{
     padding-left: 30px;
-    list-style: none;
+}
+
+.tw-img {
+    height: 34px;
+}
+
+.navbar-utils ul{    
+    overflow: auto;
+    list-style-type: none;
     display: flex;
 }
 
-.navbar-utils ul{
-    padding-top: 10px;
-    padding-right: 30px;
-    list-style: none;
-    display: flex;
-}
-
-.navbar-social a .twitter {
-    margin-top: 2px;
-    padding-left: 6px;
+.navbar-utils ul li a{
+    padding-right: 25px;
 }
 
 .banner-main img{
@@ -189,7 +186,7 @@
     text-align: center;
     padding: 15px;
     border-radius: 5px;
-    color: #131515;
+    color: #171a1a;
     cursor: pointer;
     text-transform: uppercase;
 }
@@ -210,22 +207,22 @@
 }
 
 .footer-content .footer-main .box h2{
-    color: #131515;
+    color: #171a1a;
     margin-bottom: 25px;
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 
 .footer-content .footer-main .box iframe{
-    width: 600px;
-    height: 450px;
+    width: 500px;
+    height: 350px;
 }
 
 .footer-content .footer-main .box p{
-    color: #131515;
+    color: #171a1a;
     margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
 }
 
@@ -237,6 +234,7 @@
 
 .footer-content .footer-main .box ul li p{
     margin-top: 5px;
+
 }
 
 .payments__img{
@@ -250,14 +248,16 @@
     margin: 8px;
 }
 
-.footer-content .footer-back{
-    background-color: #131515;
+.footer-content .footer-startend{
+    background-color: #171a1a;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
-.footer-content .footer-back small{
+.footer-content .footer-startend small{
     font-size: 20px;
 }
 
@@ -277,6 +277,75 @@
 }
 
 @media screen and (max-width: 600px){
+    .topbar{
+        background-color: #171a1a;
+        height: 30px;
+    }
+
+    .topbar img{
+        height: 15px;
+        width: 15px;
+        margin: 5px;
+    }
+    
+    .topbar p{
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .nav-container{
+        height: 2.5em;
+    }
+
+    .nav-social{
+        height: 2.5em;
+    }
+
+    .nav-main ul li a {
+        text-decoration: none;
+        color: #171a1a;
+        padding: 2px;
+        margin: 5px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .banner-main img{
+        width: 100%;
+        height: 280px;
+    }
+    .navbar-redes img, .navbar-utils img{
+        height: 32px;
+        width: 32px;
+    }
+
+    .tw-img{
+        height: 34px;
+    }
+    .form-content{
+        height: 500px;
+    }
+
+    .footer-content .footer-main{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        padding: 35px 0px;
+        font-size: 20px;
+    }
+
+    .footer-content .footer-main .box iframe{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .footer-content .footer-main .box h2{
+        font-size: 24px
+    }
     .contact-form{
         flex-direction: column;
     }
