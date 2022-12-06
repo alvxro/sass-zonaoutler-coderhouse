@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zona Outlet | Streetwear | Log-in | Sneakers Argentina 2022</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/zona-outlet.png">
+    <link rel="icon" type="image/x-icon" href="../assets/img/zona-outlet.png">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/login.js"></script> 
 </head>
 <body>
     <div class="model-container">
@@ -30,10 +31,10 @@
             </div>
             <div class="separador">O también</div>
             <form class="inputs-container">
-                <input class="input" type="text" placeholder="Correo electrónico o usuario">
-                <input class="input" type="password" placeholder="Contraseña">
+                <input class="input" type="text" id="user" placeholder="Correo electrónico">
+                <input class="input" type="password" id="pwd" placeholder="Contraseña">
                 <p>Olvidaste tu contraseña? <span class="span">Click aquí</span></p>
-                <button class="btn">Iniciar sesión</button>
+                <button class="btn" onclick="validate()">Iniciar sesión</button>
                 <p>No tenes una cuenta? <span class="span">Regístrate</span></p>
             </form>
         </div>
