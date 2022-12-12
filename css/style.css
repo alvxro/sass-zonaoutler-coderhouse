@@ -527,6 +527,37 @@ h3 {
   color: #000000;
   border: solid 2px #000000; }
 
+.cart {
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 6px;
+  margin-right: 4px; }
+
+.button-ask {
+  font-weight: 0;
+  text-align: center;
+  font-size: 28px;
+  color: #000000;
+  background-color: #c4c4c4;
+  padding: 10px 50px;
+  border: solid #c4c4c4 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  transition: 1000ms;
+  transform: translateY(0);
+  text-transform: uppercase;
+  border-radius: 10px;
+  width: 20%;
+  margin-top: 5px; }
+
+.button-ask:hover {
+  transition: 1000ms;
+  padding: 10px 44px;
+  transform: translateY(0px);
+  background-color: #ffffff;
+  color: #000000;
+  border: solid 2px #000000; }
+
 @media screen and (max-width: 800px) {
   .topbar {
     background-color: #171a1a;
